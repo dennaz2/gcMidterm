@@ -15,6 +15,7 @@ fetch("prints.json")
 
             //images
             let image = document.createElement('img');
+            image.classList.add('img');
             image.setAttribute('src', product.image);
             div.appendChild(image);
 
