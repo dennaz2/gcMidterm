@@ -14,8 +14,11 @@
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 
 a {
@@ -27,18 +30,18 @@ a {
 header {
   background-color: rgba(179, 178, 176, 0.6);
   border-bottom: 2px outset black;
+  width: 100%;
 }
 
-#receipt{
-    display: none;
-    text-align: center;
+#receipt {
+  display: none;
+  text-align: center;
 }
 
 .div {
-    width: 250px;
-    height: 250px;
-    background-color: lightgrey;
-    border-radius: 5px;
-    margin: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 10px;
 }
-
