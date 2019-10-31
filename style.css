@@ -15,3 +15,7 @@ ul {
   justify-content: space-around;
   list-style: none;
 }
+
+header {
+  background-color: gray;
+}
