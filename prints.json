@@ -1,34 +1,11 @@
-{[
-    "print": [
-        {
-            "name": "name1",
-            "price": "price1",
-            "size": "size1" 
-        }
-    ],
-]}
-
-{
-   "products": [
-       {
-        "print": [
-            {
-            "name": "name1";
-            "price": ""
-            }
-        ]
-    }
-
-
-
-{"menu": {
-    "id": "file",
-    "value": "File",
-    "": {
-      "menuitem": [
-        {"value": "New", "onclick": "CreateNewDoc()"},
-        {"value": "Open", "onclick": "OpenDoc()"},
-        {"value": "Close", "onclick": "CloseDoc()"}
-      ]
-    }
-  }}
+[
+  {
+    "name": "name1",
+    "description": "description1",
+    "image": "image1"
+  },
+  {
+    "price": ["price1", "price2"],
+    "size": ["size1", "size2"]
+  }
+]
