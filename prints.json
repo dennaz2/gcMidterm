@@ -1,0 +1,9 @@
+[
+    "print": [
+        {
+            "name": "name1",
+            "price": "price1",
+            "size": "size1" 
+        }
+    ],
+]
