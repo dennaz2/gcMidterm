@@ -36,7 +36,7 @@ a {
 }
 
 header {
-  background-color: rgba(179, 178, 176, 0.6);
+  background-color: rgb(179, 178, 176);
   border-bottom: 2px outset black;
   width: 100%;
   position: fixed;
@@ -52,7 +52,7 @@ header {
 .div {
   width: 250px;
   height: 250px;
-  background-color: lightgrey;
+  background-color: rgba(179, 178, 176, 0.4);
   border-radius: 5px;
   margin: 0px 10px 10px 10px;
 }
