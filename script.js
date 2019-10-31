@@ -33,3 +33,24 @@ fetch("prints.json")
 
         }
     });
+
+
+
+// let cart = document.querySelector('.fas');
+// cart.addEventListener('click', open);
+
+// function open(event) {
+//     let openMenu = document.createElement('section');
+//     openMenu.classList.add('open');
+//     if (!cartArray) {
+//         openMenu.innerText = "Nothing in your cart"
+//     }
+//     else {
+//         for (let item of cartArray) {
+//             //make elements
+//             //append to openMenu section
+//             //append to appropriate place in document
+//         }
+//     }
+
+// }
