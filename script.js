@@ -1,10 +1,11 @@
 "use strict";
 
+let items = null;
 fetch("prints.json")
     .then(res => res.json())
     .then(data => {
         // console.log(data[0].name);
-
+        items = data;
         let section = document.querySelector(".products");
         for (let product of data) {
             //divs
@@ -32,9 +33,14 @@ fetch("prints.json")
 
 
         }
+
     });
 
+let cart = [];
 
+document.querySelector('button').addEventListener('click', function () {
+    console.log(items);
+});
 
 // let cart = document.querySelector('.fas');
 // cart.addEventListener('click', open);
