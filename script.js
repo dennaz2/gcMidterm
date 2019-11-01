@@ -68,7 +68,7 @@ function openCart() {
   document.getElementById("cart").appendChild(cartPage);
   document.querySelector(".products").classList.add("darken");
   let cartList = document.createElement("ul");
-  cartList.innerText = "Shopping Cart";
+  cartPage.innerText = "Shopping Cart";
   cartPage.appendChild(cartList);
 }
 
