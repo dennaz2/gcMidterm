@@ -2,44 +2,41 @@
 
 let items = null;
 fetch("prints.json")
-    .then(res => res.json())
-    .then(data => {
-        // console.log(data[0].name);
-        items = data;
-        let section = document.querySelector(".products");
-        for (let product of data) {
-            //divs
-            let div = document.createElement("div");
-            div.innerText = `${product.name} ${product.description}`;
-            div.classList.add("div");
-            section.appendChild(div);
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data[0].name);
+    items = data;
+    let section = document.querySelector(".products");
+    for (let product of data) {
+      //divs
+      let div = document.createElement("div");
+      div.innerText = `${product.name} ${product.description}`;
+      div.classList.add("div");
+      section.appendChild(div);
 
-            //images
-            let image = document.createElement('img');
-            image.classList.add('img');
-            image.setAttribute('src', product.image);
-            div.appendChild(image);
+      //images
+      let image = document.createElement("img");
+      image.classList.add("img");
+      image.setAttribute("src", product.image);
+      div.appendChild(image);
 
-            //price 
-            let menu = document.createElement('select');
+      //price
+      let menu = document.createElement("select");
 
-            //options 
-            for (const option of product.price) {
-                let options = document.createElement('option');
-                options.innerText = option;
-                menu.appendChild(options);
-                div.appendChild(menu);
-            }
-
-
-        }
-
-    });
+      //options
+      for (const option of product.price) {
+        let options = document.createElement("option");
+        options.innerText = option;
+        menu.appendChild(options);
+        div.appendChild(menu);
+      }
+    }
+  });
 
 let cart = [];
 
-document.querySelector('button').addEventListener('click', function () {
-    console.log(items);
+document.querySelector("button").addEventListener("click", function() {
+  console.log(items);
 });
 
 // let cart = document.querySelector('.fas');

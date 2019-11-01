@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Space Ship One",
     "description": "Abstract image of the Eli and Edythe Broad Art Museum at Michigan State University.",
     "price": [
@@ -9,10 +10,10 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "/products/GC1.jpg"
   },
   {
-    "name": "name1",
+    "name": "Stonehenge at Dawn",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -25,7 +26,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Birdisle",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -38,7 +39,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Frank",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -51,7 +52,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "BLDG1",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -64,7 +65,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Courts 123",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -77,7 +78,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Mine",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -90,7 +91,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Old Seward Dock",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -103,7 +104,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Eilson Trail",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -116,7 +117,20 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "DPDFHQ",
+    "description": "description1",
+    "price": [
+      "8x10...$8.00",
+      "11x14...$12.00",
+      "16x20...$15.00",
+      "20x24...$25.00",
+      "20x30...40.00",
+      "24x36...60.00"
+    ],
+    "image": ""
+  },
+  {
+    "name": "BigBLDG",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -129,7 +143,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Layers of Glacier",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -142,7 +156,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Regression",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -155,7 +169,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Seal Rock",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -168,7 +182,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
+    "name": "Fot Mackinac",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -181,20 +195,7 @@
     "image": "image1"
   },
   {
-    "name": "name1",
-    "description": "description1",
-    "price": [
-      "8x10...$8.00",
-      "11x14...$12.00",
-      "16x20...$15.00",
-      "20x24...$25.00",
-      "20x30...40.00",
-      "24x36...60.00"
-    ],
-    "image": "image1"
-  },
-  {
-    "name": "name1",
+    "name": "Rue de Fourcy",
     "description": "description1",
     "price": [
       "8x10...$8.00",
