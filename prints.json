@@ -36,7 +36,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC3.jpg"
   },
   {
     "name": "Frank",
@@ -49,7 +49,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC4.jpg"
   },
   {
     "name": "BLDG1",
@@ -62,7 +62,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC5.jpg"
   },
   {
     "name": "Courts 123",
@@ -75,20 +75,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
-  },
-  {
-    "name": "Mine",
-    "description": "description1",
-    "price": [
-      "8x10...$8.00",
-      "11x14...$12.00",
-      "16x20...$15.00",
-      "20x24...$25.00",
-      "20x30...40.00",
-      "24x36...60.00"
-    ],
-    "image": "image1"
+    "image": "products/GC6.jpg"
   },
   {
     "name": "Old Seward Dock",
@@ -101,7 +88,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC7.jpg"
   },
   {
     "name": "Eilson Trail",
@@ -114,10 +101,10 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC8.jpg"
   },
   {
-    "name": "DPDFHQ",
+    "name": "DPDHQ",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -127,7 +114,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": ""
+    "image": "products/GC9.jpg"
   },
   {
     "name": "BigBLDG",
@@ -140,10 +127,10 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC10.jpg"
   },
   {
-    "name": "Layers of Glacier",
+    "name": "Layers of Glaciers",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -153,7 +140,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC11.jpg"
   },
   {
     "name": "Regression",
@@ -166,7 +153,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC12.jpg"
   },
   {
     "name": "Seal Rock",
@@ -179,10 +166,10 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC13.jpg"
   },
   {
-    "name": "Fot Mackinac",
+    "name": "Fort Mackinac",
     "description": "description1",
     "price": [
       "8x10...$8.00",
@@ -192,7 +179,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC14.jpg"
   },
   {
     "name": "Rue de Fourcy",
@@ -205,6 +192,19 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
-    "image": "image1"
+    "image": "products/GC15.jpg"
+  },
+  {
+    "name": "Tour Eiffel",
+    "description": "description1",
+    "price": [
+      "8x10...$8.00",
+      "11x14...$12.00",
+      "16x20...$15.00",
+      "20x24...$25.00",
+      "20x30...40.00",
+      "24x36...60.00"
+    ],
+    "image": "products/GC16.jpg"
   }
 ]
