@@ -102,13 +102,6 @@ footer {
     height: 8%;
 }
 
-select {
-    width: 60%;
-    position: absolute;
-    left: 1%;
-    bottom: 1%;
-}
-
 .description {
     font-size: 10pt;
     color: rgb(43, 42, 42);
