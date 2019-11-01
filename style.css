@@ -119,6 +119,7 @@ footer {
 }
 
 #cart {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,6 +127,35 @@ footer {
 
 input {
   border: 1px solid black;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+input {
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+
+.credit-card {
+    display: flex;
+    display: none;
+    justify-content: center;
+    background-color: rgba(179, 178, 176, 0.4);
+    margin: 0 auto;
+}
+
+fieldset {}
+
+#confirm-purchase {
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin: 10px auto;
+>>>>>>> 0f5a2da35cd7c5074671366aebed25a11bb40f61
 }
 
 @media screen and (min-width: 768px) {
