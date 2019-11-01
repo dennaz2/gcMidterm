@@ -56,6 +56,9 @@ header {
 }
 
 .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 250px;
     height: 250px;
     background-color: rgba(179, 178, 176, 0.4);
