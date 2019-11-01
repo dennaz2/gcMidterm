@@ -85,7 +85,7 @@
   },
   {
     "name": "Old Seward Dock",
-    "description": "description1",
+    "description": "The old dock in Seward, Alaska that was destroyed in the 1964 earthquake",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -99,7 +99,7 @@
   },
   {
     "name": "Eilson Trail",
-    "description": "description1",
+    "description": "Eilson Trail in Denali National Park, Alaska, overlooking Mt. Denali",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -112,8 +112,8 @@
     "image": "products/GC8.jpg"
   },
   {
-    "name": "DPDHQ",
-    "description": "description1",
+    "name": "DPDHQ1",
+    "description": "Former Detroit Police Departent Headquarters Building, view one",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -126,8 +126,8 @@
     "image": "products/GC9.jpg"
   },
   {
-    "name": "BigBLDG",
-    "description": "description1",
+    "name": "DPDHQ2",
+    "description": "Former Detroit Police Department Headquarters Building, view two",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -141,7 +141,7 @@
   },
   {
     "name": "Layers of Glaciers",
-    "description": "description1",
+    "description": "Aialik Glacier in Aialik Bay, Alaska",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -155,7 +155,7 @@
   },
   {
     "name": "Regression",
-    "description": "description1",
+    "description": "Holgate Glacier in Aialik Bay, Alaska",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Seal Rock",
-    "description": "description1",
+    "description": "A rock populated by seals in Resurrection Bay, Alaska",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -183,7 +183,7 @@
   },
   {
     "name": "Fort Mackinac",
-    "description": "description1",
+    "description": "Fort Mackinac on Mackinac Island, Michigan",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -197,7 +197,7 @@
   },
   {
     "name": "Rue de Fourcy",
-    "description": "description1",
+    "description": "Small Hostel in Paris, France.",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -210,8 +210,8 @@
     "image": "products/GC15.jpg"
   },
   {
-    "name": "Tour Eiffel",
-    "description": "description1",
+    "name": "Rue de Fourcy",
+    "description": "Small Hostel in Paris, France.",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
