@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Print Shop</title>
-    <script src="https://kit.fontawesome.com/d01b88429a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d01b88429a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://jda.photos/"><img src="logo copy.png" class="logo" /></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-shopping-cart open-cart"></i></a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://jda.photos/"
+              ><img src="logo copy.png" class="logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart open-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="filler"></div>
     <section class="products"></section>
     <section id="cart"></section>
     <section id="receipt">
-        <h1>Thank you for shopping!</h1>
-        <div></div>
+      <h1>Thank you for shopping!</h1>
+      <div></div>
     </section>
 
     <form class="credit-card">
-        <fieldset>
-            <label for="owner">Name on card</label>
-            <input type="text" id="owner" />
+      <fieldset>
+        <label for="owner">Name on card</label>
+        <input type="text" id="owner" />
 
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" />
 
-            <label for="cardNumber">Card Number</label>
-            <input type="text" id="cardNumber">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" />
 
-            <label>Expiration Date</label>
-            <select>
-                <option value="01">January</option>
-                <option value="02">February </option>
-                <option value="03">March</option>
-                <option value="04">April</option>
-                <option value="05">May</option>
-                <option value="06">June</option>
-                <option value="07">July</option>
-                <option value="08">August</option>
-                <option value="09">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            <select>
-                <option value="19"> 2019</option>
-                <option value="20"> 2020</option>
-                <option value="21"> 2021</option>
-                <option value="22"> 2022</option>
-                <option value="23"> 2023</option>
-                <option value="24"> 2024</option>
-                <option value="25"> 2025</option>
-            </select>
+        <label>Expiration Date</label>
+        <select>
+          <option value="01">January</option>
+          <option value="02">February </option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <select>
+          <option value="19"> 2019</option>
+          <option value="20"> 2020</option>
+          <option value="21"> 2021</option>
+          <option value="22"> 2022</option>
+          <option value="23"> 2023</option>
+          <option value="24"> 2024</option>
+          <option value="25"> 2025</option>
+        </select>
 
-            <button type="submit" id="confirm-purchase">Confirm</button>
-        </fieldset>
+        <button type="submit" id="confirm-purchase">Confirm</button>
+      </fieldset>
     </form>
 
     <footer class="footer">
-        <ul>
-            <li>
-                <a href="https://jda.photos"><i class="fas fa-home"></i> </a>
-            </li>
-            <li>
-                <a href="mailto:jdandrewsphoto@gmail.com"><i class="fas fa-envelope"></i>
-                </a>
-            </li>
-            <li><a href="#">FAQ</a></li>
-            <li>
-                <a href="https://www.instagram.com/jda.photos"><i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="https://jda.photos"><i class="fas fa-home"></i> </a>
+        </li>
+        <li>
+          <a href="mailto:jdandrewsphoto@gmail.com"
+            ><i class="fas fa-envelope"></i>
+          </a>
+        </li>
+        <li><a href="#">FAQ</a></li>
+        <li>
+          <a href="https://www.instagram.com/jda.photos"
+            ><i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
