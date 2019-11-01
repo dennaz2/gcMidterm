@@ -70,6 +70,7 @@ img {
   background-color: rgba(179, 178, 176, 0.4);
   border-radius: 5px;
   margin: 0px 10px 10px 10px;
+  z-index: -1;
 }
 
 .filler {
