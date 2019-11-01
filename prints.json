@@ -10,11 +10,12 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC1.jpg"
   },
   {
     "name": "Stonehenge at Dawn",
-    "description": "description1",
+    "description": "Name says it all, it's stonehenge at dawn",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -23,11 +24,12 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC2.jpg"
   },
   {
     "name": "Birdisle",
-    "description": "description1",
+    "description": "Island in Resurrection Bay, Alaska populated exclusively by birds",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -36,11 +38,12 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC3.jpg"
   },
   {
     "name": "Frank",
-    "description": "description1",
+    "description": "Frank Murphy hall of Justice in Detroit, Michigan. Brutalist architecture at it's best.",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -49,11 +52,12 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC4.jpg"
   },
   {
     "name": "BLDG1",
-    "description": "description1",
+    "description": "Building in Corktown, Detroit, Michigan",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -62,11 +66,12 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC5.jpg"
   },
   {
     "name": "Courts 123",
-    "description": "description1",
+    "description": "Old wall-ball courts on Belle Isle in Detroit, Michigan",
     "price": [
       "8x10...$8.00",
       "11x14...$12.00",
@@ -75,6 +80,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC6.jpg"
   },
   {
@@ -88,6 +94,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC7.jpg"
   },
   {
@@ -101,6 +108,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC8.jpg"
   },
   {
@@ -114,6 +122,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC9.jpg"
   },
   {
@@ -127,6 +136,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC10.jpg"
   },
   {
@@ -140,6 +150,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC11.jpg"
   },
   {
@@ -153,6 +164,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC12.jpg"
   },
   {
@@ -166,6 +178,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC13.jpg"
   },
   {
@@ -179,6 +192,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC14.jpg"
   },
   {
@@ -192,6 +206,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC15.jpg"
   },
   {
@@ -205,6 +220,7 @@
       "20x30...40.00",
       "24x36...60.00"
     ],
+    "priceAss": "30",
     "image": "products/GC16.jpg"
   }
 ]
