@@ -1,6 +1,7 @@
 "use strict";
 
 let items = null; //used to get the data from inside of the fetch
+let btn = null;
 fetch("prints.json")
   .then(res => res.json())
   .then(data => {
@@ -33,9 +34,11 @@ fetch("prints.json")
 
       //button for adding items to cart.
       let addItem = document.createElement("button");
+      addItem.id = "btn";
       addItem.setAttribute("type", "submit");
       addItem.innerText = "Add to cart";
       div.appendChild(addItem);
+      btn = addItem;
     }
   });
 
