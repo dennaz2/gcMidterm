@@ -17,7 +17,6 @@ fetch("prints.json")
       //title
       let titleEl = document.createElement("div");
         titleEl.innerText = `${product.name}`;
-        titleEl.setAttribute('data-index-number', index);
       titleEl.classList.add("title");
       div.appendChild(titleEl);
 
@@ -51,7 +50,8 @@ fetch("prints.json")
 
       //button for adding items to cart.
       let addItem = document.createElement("button");
-      addItem.id = "btn";
+        addItem.id = "btn";
+        addItem.setAttribute('data-index-number', index);
       addItem.setAttribute("type", "submit");
       addItem.innerText = "Add to cart";
       div.appendChild(addItem);
@@ -68,8 +68,8 @@ function addToCart(event) {
   if (event.target.id === "btn") {
     console.log(event.target);
     console.log(event.target.parentElement);
-    const index = event.target.parentElement.getAttribute("data-index-number");
-    cart.push(items[index]);
+    const index = event.target.getAttribute("data-index-number");
+    cart.push(items[index].name);
     console.log(cart);
   }
 }
