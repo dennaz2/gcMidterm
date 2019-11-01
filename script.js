@@ -16,7 +16,8 @@ fetch("prints.json")
 
       //title
       let titleEl = document.createElement("div");
-      titleEl.innerText = `${product.name}`;
+        titleEl.innerText = `${product.name}`;
+        titleEl.setAttribute('data-index-number', index);
       titleEl.classList.add("title");
       div.appendChild(titleEl);
 
