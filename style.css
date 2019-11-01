@@ -105,6 +105,11 @@ select {
     bottom: 1%;
 }
 
+.description {
+  font-size: 10pt;
+  color: rgb(43, 42, 42);
+}
+
 /* .open {
     
 } */
