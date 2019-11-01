@@ -91,9 +91,8 @@ container.addEventListener("click", cart.addToCart.bind(cart));
 document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 
 function openCart() {
-    let cartPage = document.createElement("section");
+    let cartPage = document.querySelector('#cart');
     cartPage.classList.add("open");
-    document.getElementById("cart").appendChild(cartPage);
     document.querySelector(".products").classList.add("darken");
 }
 
