@@ -3,86 +3,81 @@
 let items = null; //used to get the data from inside of the fetch
 let div;
 fetch("prints.json")
-    .then(res => res.json())
-    .then(data => {
-        // console.log(data[0].name);
-        items = data;
-        let section = document.querySelector(".products");
-        data.forEach((product, index) => {
-            //divs
-            let div = document.createElement("div");
-            div.classList.add("div");
-            section.appendChild(div);
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data[0].name);
+    items = data;
+    let section = document.querySelector(".products");
+    data.forEach((product, index) => {
+      //divs
+      let div = document.createElement("div");
+      div.classList.add("div");
+      section.appendChild(div);
 
-            //title
-            let titleEl = document.createElement("div");
-            titleEl.innerText = `${product.name}`;
-            titleEl.classList.add("title");
-            div.appendChild(titleEl);
+      //title
+      let titleEl = document.createElement("div");
+      titleEl.innerText = `${product.name}`;
+      titleEl.classList.add("title");
+      div.appendChild(titleEl);
 
-            //images
-            let image = document.createElement("img");
-            image.classList.add("img");
-            image.setAttribute("src", product.image);
-            div.appendChild(image);
+      //images
+      let image = document.createElement("img");
+      image.classList.add("img");
+      image.setAttribute("src", product.image);
+      div.appendChild(image);
 
-            //description
-            let descriptionEl = document.createElement("div");
-            descriptionEl.innerText = `${product.description}`;
-            descriptionEl.classList.add("description");
-            div.appendChild(descriptionEl);
+      //description
+      let descriptionEl = document.createElement("div");
+      descriptionEl.innerText = `${product.description}`;
+      descriptionEl.classList.add("description");
+      div.appendChild(descriptionEl);
 
-            //   //price
-            //   let menu = document.createElement("select");
+      //   //price
+      //   let menu = document.createElement("select");
 
-            //   //options
-            //   for (const option of product.price) {
-            //     let options = document.createElement("option");
-            //     options.innerText = option;
-            //     menu.appendChild(options);
-            //     div.appendChild(menu);
-            //   }
+      //   //options
+      //   for (const option of product.price) {
+      //     let options = document.createElement("option");
+      //     options.innerText = option;
+      //     menu.appendChild(options);
+      //     div.appendChild(menu);
+      //   }
 
-            //priceAss
-            let priceEl = document.createElement("div");
-            priceEl.innerText = `$${product.priceAss}`;
-            div.appendChild(priceEl);
+      //priceAss
+      let priceEl = document.createElement("div");
+      priceEl.innerText = `$${product.priceAss}`;
+      div.appendChild(priceEl);
 
-            //button for adding items to cart.
-            let addItem = document.createElement("button");
-            addItem.id = "btn";
-            addItem.setAttribute('data-index-number', index);
-            addItem.setAttribute("type", "submit");
-            addItem.innerText = "Add to cart";
-            div.appendChild(addItem);
-        });
+      //button for adding items to cart.
+      let addItem = document.createElement("button");
+      addItem.id = "btn";
+      addItem.setAttribute("data-index-number", index);
+      addItem.setAttribute("type", "submit");
+      addItem.innerText = "Add to cart";
+      div.appendChild(addItem);
     });
-
-
-
-
+  });
 
 // // add items button
 // let container = document.querySelector(".products");
-// container.addEventListener("click", addToCart); 
+// container.addEventListener("click", addToCart);
 
 class TheCart {
-    constructor() {
-        this.cart = [];
-    }
+  constructor() {
+    this.cart = [];
+  }
 
-
-    //adding item to cart 
-    addToCart(event) {
-        console.log("hi", this);
-        if (event.target.id === "btn") {
-            console.log(event.target);
-            console.log(event.target.parentElement);
-            const index = event.target.getAttribute("data-index-number");
-            this.cart.push(items[index].name);
-            console.log(this.cart);
-        }
+  //adding item to cart
+  addToCart(event) {
+    console.log("hi", this);
+    if (event.target.id === "btn") {
+      console.log(event.target);
+      console.log(event.target.parentElement);
+      const index = event.target.getAttribute("data-index-number");
+      this.cart.push(items[index].name);
+      console.log(this.cart);
     }
+  }
 }
 
 const cart = new TheCart();
@@ -93,7 +88,26 @@ let container = document.querySelector(".products");
 // });
 container.addEventListener("click", cart.addToCart.bind(cart));
 
-// let cart = []; //cart 
+document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
+
+function openCart() {
+  let cartPage = document.createElement("section");
+  cartPage.classList.add("open");
+  document.getElementById("cart").appendChild(cartPage);
+  document.querySelector(".products").classList.add("darken");
+}
+
+// function openCart(cart) {
+//   let cartPage = document.createElement("section");
+//   body.appendChild(cartPage);
+//   for (item of cart.cart) {
+//     let newItem = document.createElement("p");
+//     newItem.innerText = item;
+//     cartPage.appendChild(newItem);
+//   }
+// }
+
+// let cart = []; //cart
 
 // // add items button
 // let container = document.querySelector(".products");
@@ -112,7 +126,7 @@ container.addEventListener("click", cart.addToCart.bind(cart));
 //   }
 // }
 
-// // getting items to add to cart and open the cart when pressed 
+// // getting items to add to cart and open the cart when pressed
 // let theCart = document.querySelector('.open-cart');
 // theCart.addEventListener('click', open);
 

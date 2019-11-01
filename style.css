@@ -114,6 +114,12 @@ select {
   color: rgb(43, 42, 42);
 }
 
-/* .open {
-    
-} */
+.open {
+  width: 250px;
+  height: 250px;
+  background-color: lightgray;
+}
+
+.darken {
+  display: none;
+}
