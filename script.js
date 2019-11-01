@@ -2,47 +2,53 @@
 
 let items = null; //used to get the data from inside of the fetch
 fetch("prints.json")
-    .then(res => res.json())
-    .then(data => {
-        // console.log(data[0].name);
-        items = data;
-        let section = document.querySelector(".products");
-        data.forEach((product, index) => { 
-            //divs
-            let div = document.createElement("div");
-            div.innerText = `${product.name} ${product.description}`;
-            div.classList.add("div");
-            section.appendChild(div);
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data[0].name);
+    items = data;
+    let section = document.querySelector(".products");
+    data.forEach((product, index) => {
+      //divs
+      let div = document.createElement("div");
+      div.innerText = `${product.name} ${product.description}`;
+      div.classList.add("div");
+      section.appendChild(div);
 
-            //images
-            let image = document.createElement("img");
-            image.classList.add("img");
-            image.setAttribute("src", product.image);
-            div.appendChild(image);
+      //images
+      let image = document.createElement("img");
+      image.classList.add("img");
+      image.setAttribute("src", product.image);
+      div.appendChild(image);
 
-            //price
-            let menu = document.createElement("select");
+      //description
+      let descriptionEl = document.createElement("div");
+      descriptionEl.innerText = `${product.description}`;
+      descriptionEl.classList.add("description");
+      div.appendChild(descriptionEl);
 
-            //options
-            for (const option of product.price) {
-                let options = document.createElement("option");
-                options.innerText = option;
-                menu.appendChild(options);
-                div.appendChild(menu);
-            }
+      //price
+      let menu = document.createElement("select");
 
-            //button for adding items to cart.
-            let addItem = document.createElement("button");
-            addItem.id = "btn";
-            addItem.setAttribute("type", "submit");
-            addItem.innerText = "Add to cart";
-            div.appendChild(addItem);
-        }
-    )});
+      //options
+      for (const option of product.price) {
+        let options = document.createElement("option");
+        options.innerText = option;
+        menu.appendChild(options);
+        div.appendChild(menu);
+      }
+
+      //button for adding items to cart.
+      let addItem = document.createElement("button");
+      addItem.id = "btn";
+      addItem.setAttribute("type", "submit");
+      addItem.innerText = "Add to cart";
+      div.appendChild(addItem);
+    });
+  });
 
 let cart = [];
 
-//add items button 
+//add items button
 // let container = document.querySelector(".products")
 // container.addEventListener('click', addToCart);
 
