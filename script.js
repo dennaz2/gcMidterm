@@ -92,6 +92,11 @@ document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 
 function openCart() {
     let cartPage = document.querySelector('#cart');
+    for (let cartItems of cart.cart) {
+        let pEl = document.createElement('p');
+        pEl.innerText = cartItems;
+        cartPage.appendChild(pEl);
+    }
     cartPage.classList.add("open");
     document.querySelector(".products").classList.add("darken");
 }
