@@ -94,11 +94,13 @@ function openCart() {
     let cartPage = document.querySelector('#cart');
     for (let cartItems of cart.cart) {
         let pEl = document.createElement('p');
-        pEl.innerText = cartItems;
+        pEl.innerText = `${cartItems}`;
         cartPage.appendChild(pEl);
     }
+
     cartPage.classList.add("open");
     document.querySelector(".products").classList.add("darken");
+    document.querySelector(".fa-shopping-cart").removeEventListener("click", openCart);
 }
 
 // function openCart(cart) {
