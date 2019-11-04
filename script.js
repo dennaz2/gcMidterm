@@ -103,6 +103,10 @@ let paymentPage = document.querySelector(".payment");
 // paymentPage.classList.add("darken");
 let cartPage = document.querySelector("#cart");
 // cartPage.classList.add("darken");
+let receiptPage = document.querySelector("#receipt");
+receiptPage.classList.add("darken");
+
+console.log(cart.cart);
 
 function openCart() {
   for (let cartItems of cart.cart) {
@@ -173,12 +177,18 @@ function openCart() {
   });
 
   ////Receipt Page
-  // let receiptPage = document.getElementById("receipt");
-  // let payNow = document.querySelector("receipt-return");
-  // payNow.addEventListener("click", function(event) {
-  //   event.preventDefault();
-  //   console.log("paid");
-  // });
+
+  let ccPurchase = document.querySelector("#confirm-purchase");
+  ccPurchase.addEventListener("click", function(event) {
+    event.preventDefault();
+    paymentPage.setAttribute("style", "display: none");
+    receiptPage.classList.remove("darken");
+    for (let cartItems of cart.cart) {
+      let productPurchased = document.createElement("p");
+      productPurchased.innerText = `${cartItems}`;
+      receiptPage.appendChild(productPurchased);
+    }
+  });
 
   cartPage.classList.add("open");
   document.querySelector(".products").classList.add("darken");

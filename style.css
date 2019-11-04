@@ -16,7 +16,7 @@
 
 button {
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   border-radius: 20px;
 }
 
@@ -52,7 +52,6 @@ header {
 }
 
 #receipt {
-  display: none;
   text-align: center;
 }
 
@@ -135,8 +134,8 @@ footer {
   margin: 0 auto;
 }
 
-h2#cart {
-  background-color: grey;
+h2 {
+  text-decoration: underline;
 }
 
 .payment {
