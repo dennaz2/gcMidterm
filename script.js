@@ -94,25 +94,37 @@ let container = document.querySelector(".products");
 container.addEventListener("click", cart.addToCart.bind(cart));
 
 document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
+////add if/else loop so that when cart is clicked it will remove a display/none class from cart and add
+//// a display none class to products if the clicked item has the cart icon class, this way it won't add cart
+//// items if you click it to then add the display/none class back to cart and remove it from products.
+//// toggleAttribute might also work.
 
 function openCart() {
-<<<<<<< HEAD
-  let cartPage = document.createElement("section");
-  cartPage.classList.add("open");
-  document.getElementById("cart").appendChild(cartPage);
-  document.querySelector(".products").classList.add("darken");
-=======
-    let cartPage = document.querySelector('#cart');
-    for (let cartItems of cart.cart) {
-        let pEl = document.createElement('p');
-        pEl.innerText = `${cartItems}`;
-        cartPage.appendChild(pEl);
-    }
+  let cartPage = document.querySelector("#cart");
+  for (let cartItems of cart.cart) {
+    let pEl = document.createElement("p");
+    pEl.innerText = `${cartItems} $30`;
+    cartPage.appendChild(pEl);
+    let deleteButton = document.createElement("button");
+    deleteButton.setAttribute("type", "button");
+    deleteButton.innerText = "Delete";
+    deleteButton.classList.add("delete");
+    deleteButton.addEventListener("click", function(event) {
+      let buttonClicked = event.target;
+      buttonClicked.parentElement.remove();
+    });
+    pEl.appendChild(deleteButton);
+  }
+  let total = document.createElement("p");
+  let totalNum = (cart.cart.length *= 30);
+  total.innerText = `${totalNum}`;
+  cartPage.appendChild(total);
 
-    cartPage.classList.add("open");
-    document.querySelector(".products").classList.add("darken");
-    document.querySelector(".fa-shopping-cart").removeEventListener("click", openCart);
->>>>>>> 5c09f4f733d7640b82fce6ced32f68b6fe649bac
+  cartPage.classList.add("open");
+  document.querySelector(".products").classList.add("darken");
+  document
+    .querySelector(".fa-shopping-cart")
+    .removeEventListener("click", openCart);
 }
 
 // function openCart(cart) {
