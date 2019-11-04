@@ -16,6 +16,8 @@
 
 button {
   cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 ul {
