@@ -109,6 +109,7 @@ footer {
 .description {
   font-size: 10pt;
   color: rgb(43, 42, 42);
+  margin-bottom: 20px;
 }
 
 .open {
