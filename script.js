@@ -100,7 +100,7 @@ document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 //// toggleAttribute might also work.
 
 function openCart() {
-  let cartPage = document.querySelector("#cart");
+  let cartPage = document.querySelector("#cart2");
   for (let cartItems of cart.cart) {
     let pEl = document.createElement("p");
     pEl.innerText = `${cartItems} $30`;
@@ -122,7 +122,7 @@ function openCart() {
   subtotal.innerText = `Subtotal: $${subtotalNum}`;
   cartPage.appendChild(subtotal);
   let taxEl = document.createElement("p");
-  let taxNum = Math.round((subtotalNum *= 0.06) * 100) / 100;
+  let taxNum = Math.round(subtotalNum * 0.06 * 100) / 100;
   taxEl.innerText = `Tax (6% local) $${taxNum}`;
   cartPage.appendChild(taxEl);
   let total = document.createElement("p");
