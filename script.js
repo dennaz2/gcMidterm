@@ -112,6 +112,8 @@ function openCart() {
   for (let cartItems of cart.cart) {
     let pEl = document.createElement("p");
     pEl.innerText = `${cartItems} $30`;
+    let rEl = document.createElement("p");
+    rEl.innerText = `${cartItems}`;
     cartPage.appendChild(pEl);
     let deleteButton = document.createElement("button");
     deleteButton.setAttribute("type", "button");
@@ -122,6 +124,7 @@ function openCart() {
       buttonClicked.parentElement.remove();
     });
     pEl.appendChild(deleteButton);
+    receiptPage.appendChild(rEl);
   }
 
   //subtotal - tax - total - refresh Cart
@@ -178,16 +181,12 @@ function openCart() {
 
   ////Receipt Page
 
+  ///creditCard
   let ccPurchase = document.querySelector("#confirm-purchase");
   ccPurchase.addEventListener("click", function(event) {
     event.preventDefault();
     paymentPage.setAttribute("style", "display: none");
     receiptPage.classList.remove("darken");
-    for (let cartItems of cart.cart) {
-      let productPurchased = document.createElement("p");
-      productPurchased.innerText = `${cartItems}`;
-      receiptPage.appendChild(productPurchased);
-    }
   });
 
   cartPage.classList.add("open");
@@ -195,6 +194,14 @@ function openCart() {
   document
     .querySelector(".fa-shopping-cart")
     .removeEventListener("click", openCart);
+
+  ///cash
+  let cashPurchase = document.querySelector("#plspay");
+  cashPurchase.addEventListener("click", function(event) {
+    event.preventDefault();
+    paymentPage.setAttribute("style", "display: none");
+    receiptPage.classList.remove("darken");
+  });
 }
 
 ////????? To do - make total work, add creditcard form, add cash thing.

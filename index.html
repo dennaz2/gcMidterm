@@ -10,6 +10,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli|Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -20,12 +28,7 @@
             <a href=""><img src="logo copy.png" class="logo"/></a>
           </li>
           <li>
-            <a href="#"
-              ><i
-                class="fas fa-shopping-cart open-cart"
-                onclick="openCart()"
-              ></i
-            ></a>
+            <a href="#"><i class="fas fa-shopping-cart open-cart"></i></a>
           </li>
         </ul>
       </nav>
@@ -45,6 +48,7 @@
         <button type="submit" id="cashtotal">Change Owed</button>
         <p id="changeowed"></p>
       </form>
+      <button type="button" id="plspay">Pay Cash</button>
       <form class="credit-card">
         <fieldset>
           <h2>Credit</h2>
@@ -82,12 +86,13 @@
             <option value="25"> 2025</option>
           </select>
 
-          <button type="submit" id="confirm-purchase">Confirm</button>
+          <button type="submit" id="confirm-purchase">Pay Credit</button>
         </fieldset>
       </form>
     </section>
     <section id="receipt">
       <h1>Thank you for shopping!</h1>
+      <h3>Items Purchased:</h3>
       <div></div>
     </section>
 
