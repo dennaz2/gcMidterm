@@ -17,6 +17,7 @@
 button {
   cursor: pointer;
 }
+
 ul {
   display: flex;
   flex-direction: row;
@@ -115,6 +116,7 @@ footer {
   height: 250px;
   background-color: rgba(179, 178, 176, 0.4);
   display: block;
+  margin: 0 auto;
 }
 
 .darken {

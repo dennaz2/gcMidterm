@@ -1,35 +1,35 @@
-"use strict";
+'use strict';
 
 let items = null; //used to get the data from inside of the fetch
 let div;
-fetch("prints.json")
+fetch('prints.json')
   .then(res => res.json())
   .then(data => {
     // console.log(data[0].name);
     items = data;
-    let section = document.querySelector(".products");
+    let section = document.querySelector('.products');
     data.forEach((product, index) => {
       //divs
-      let div = document.createElement("div");
-      div.classList.add("div");
+      let div = document.createElement('div');
+      div.classList.add('div');
       section.appendChild(div);
 
       //title
-      let titleEl = document.createElement("div");
+      let titleEl = document.createElement('div');
       titleEl.innerText = `${product.name}`;
-      titleEl.classList.add("title");
+      titleEl.classList.add('title');
       div.appendChild(titleEl);
 
       //images
-      let image = document.createElement("img");
-      image.classList.add("img");
-      image.setAttribute("src", product.image);
+      let image = document.createElement('img');
+      image.classList.add('img');
+      image.setAttribute('src', product.image);
       div.appendChild(image);
 
       //description
-      let descriptionEl = document.createElement("div");
+      let descriptionEl = document.createElement('div');
       descriptionEl.innerText = `${product.description}`;
-      descriptionEl.classList.add("description");
+      descriptionEl.classList.add('description');
       div.appendChild(descriptionEl);
 
       //   //price
@@ -44,16 +44,16 @@ fetch("prints.json")
       //   }
 
       //priceAss
-      let priceEl = document.createElement("div");
+      let priceEl = document.createElement('div');
       priceEl.innerText = `$${product.priceAss}`;
       div.appendChild(priceEl);
 
       //button for adding items to cart.
-      let addItem = document.createElement("button");
-      addItem.id = "btn";
-      addItem.setAttribute("data-index-number", index);
-      addItem.setAttribute("type", "submit");
-      addItem.innerText = "Add to cart";
+      let addItem = document.createElement('button');
+      addItem.id = 'btn';
+      addItem.setAttribute('data-index-number', index);
+      addItem.setAttribute('type', 'submit');
+      addItem.innerText = 'Add to cart';
       div.appendChild(addItem);
     });
   });
@@ -63,12 +63,12 @@ fetch("prints.json")
 // container.addEventListener("click", addToCart);
 
 function openCart() {
-  let cartPage = document.createElement("section");
-  cartPage.classList.add("open");
-  document.getElementById("cart").appendChild(cartPage);
-  document.querySelector(".products").classList.add("darken");
-  let cartList = document.createElement("ul");
-  cartPage.innerText = "Shopping Cart";
+  let cartPage = document.createElement('section');
+  cartPage.classList.add('open');
+  document.getElementById('cart').appendChild(cartPage);
+  document.querySelector('.products').classList.add('darken');
+  let cartList = document.createElement('ul');
+  cartPage.innerText = 'Shopping Cart';
   cartPage.appendChild(cartList);
 }
 
@@ -79,21 +79,21 @@ class TheCart {
 
   //adding item to cart
   addToCart(event) {
-    if (event.target.id === "btn") {
-      const index = event.target.getAttribute("data-index-number");
+    if (event.target.id === 'btn') {
+      const index = event.target.getAttribute('data-index-number');
       this.cart.push(items[index].name);
     }
   }
 }
 const cart = new TheCart();
-let container = document.querySelector(".products");
+let container = document.querySelector('.products');
 //container.addEventListener("click", cart.addToCart);
 // container.addEventListener("click", (e) => {
 //     cart.addToCart(e);
 // });
-container.addEventListener("click", cart.addToCart.bind(cart));
+container.addEventListener('click', cart.addToCart.bind(cart));
 
-document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
+document.querySelector('.fa-shopping-cart').addEventListener('click', openCart);
 ////add if/else loop so that when cart is clicked it will remove a display/none class from cart and add
 //// a display none class to products if the clicked item has the cart icon class, this way it won't add cart
 //// items if you click it to then add the display/none class back to cart and remove it from products.
@@ -103,16 +103,16 @@ let paymentPage = document.querySelector(".payment");
 paymentPage.classList.add("darken");
 
 function openCart() {
-  let cartPage = document.querySelector("#cart");
+  let cartPage = document.querySelector('#cart');
   for (let cartItems of cart.cart) {
-    let pEl = document.createElement("p");
+    let pEl = document.createElement('p');
     pEl.innerText = `${cartItems} $30`;
     cartPage.appendChild(pEl);
-    let deleteButton = document.createElement("button");
-    deleteButton.setAttribute("type", "button");
-    deleteButton.innerText = "Delete";
-    deleteButton.classList.add("delete");
-    deleteButton.addEventListener("click", function(event) {
+    let deleteButton = document.createElement('button');
+    deleteButton.setAttribute('type', 'button');
+    deleteButton.innerText = 'Delete';
+    deleteButton.classList.add('delete');
+    deleteButton.addEventListener('click', function (event) {
       let buttonClicked = event.target;
       buttonClicked.parentElement.remove();
     });
@@ -124,11 +124,11 @@ function openCart() {
   let subtotalNum = (cart.cart.length *= 30);
   subtotal.innerText = `Subtotal: $${subtotalNum}`;
   cartPage.appendChild(subtotal);
-  let taxEl = document.createElement("p");
+  let taxEl = document.createElement('p');
   let taxNum = Math.round(subtotalNum * 0.06 * 100) / 100;
   taxEl.innerText = `Tax (6% local) $${taxNum}`;
   cartPage.appendChild(taxEl);
-  let total = document.createElement("p");
+  let total = document.createElement('p');
   let totalNum = subtotalNum + taxNum;
   total.innerText = `Total: $${totalNum}`;
   cartPage.appendChild(total);
@@ -136,7 +136,7 @@ function openCart() {
   refreshCart.innerText = "Refresh Cart";
   refreshCart.classList.add("refresh");
   refreshCart.setAttribute("type", "button");
-  refreshCart.addEventListener("click", function() {
+  refreshCart.addEventListener("click", function () {
     subtotal.classList.add("darken");
     taxEl.classList.add("darken");
     total.classList.add("darken");
@@ -150,7 +150,7 @@ function openCart() {
   checkoutBtn.classList.add("checkout");
 
   checkoutBtn.setAttribute("type", "button");
-  checkoutBtn.addEventListener("click", function() {
+  checkoutBtn.addEventListener("click", function () {
     cartPage.remove();
     paymentPage.classList.remove("darken");
 
@@ -162,7 +162,7 @@ function openCart() {
   ////Cash Payments
 
   let payHere = document.querySelector("#cashtotal");
-  payHere.addEventListener("click", function(event) {
+  payHere.addEventListener("click", function (event) {
     event.preventDefault();
     let cashPaid = document.getElementById("amount").value;
     let changeOwed = (cashPaid -= totalNum);
@@ -171,11 +171,11 @@ function openCart() {
     ).innerText = `Change Due: ${changeOwed}`;
   });
 
-  cartPage.classList.add("open");
-  document.querySelector(".products").classList.add("darken");
+  cartPage.classList.add('open');
+  document.querySelector('.products').classList.add('darken');
   document
-    .querySelector(".fa-shopping-cart")
-    .removeEventListener("click", openCart);
+    .querySelector('.fa-shopping-cart')
+    .removeEventListener('click', openCart);
 }
 
 ////????? To do - make total work, add creditcard form, add cash thing.
