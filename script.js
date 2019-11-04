@@ -165,7 +165,7 @@ function openCart() {
   payHere.addEventListener("click", function (event) {
     event.preventDefault();
     let cashPaid = document.getElementById("amount").value;
-    let changeOwed = (cashPaid -= totalNum);
+    let changeOwed = (cashPaid -= totalNum).toFixed(2);
     document.getElementById(
       "changeowed"
     ).innerText = `Change Due: ${changeOwed}`;
