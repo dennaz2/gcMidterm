@@ -99,6 +99,9 @@ document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 //// items if you click it to then add the display/none class back to cart and remove it from products.
 //// toggleAttribute might also work.
 
+let paymentPage = document.querySelector(".payment");
+paymentPage.classList.add("darken");
+
 function openCart() {
   let cartPage = document.querySelector("#cart");
   for (let cartItems of cart.cart) {
@@ -116,7 +119,7 @@ function openCart() {
     pEl.appendChild(deleteButton);
   }
 
-  //subtotal - tax - total
+  //subtotal - tax - total - refresh Cart
   let subtotal = document.createElement("p");
   let subtotalNum = (cart.cart.length *= 30);
   subtotal.innerText = `Subtotal: $${subtotalNum}`;
@@ -129,6 +132,32 @@ function openCart() {
   let totalNum = subtotalNum + taxNum;
   total.innerText = `Total: $${totalNum}`;
   cartPage.appendChild(total);
+  let refreshCart = document.createElement("button");
+  refreshCart.innerText = "Refresh Cart";
+  refreshCart.classList.add("refresh");
+  refreshCart.setAttribute("type", "button");
+  refreshCart.addEventListener("click", function() {
+    subtotal.classList.add("darken");
+    taxEl.classList.add("darken");
+    total.classList.add("darken");
+    let fakeTotal = document.createElement("p");
+    fakeTotal.innerText = "Total: $0";
+    cartPage.appendChild(fakeTotal);
+  });
+  cartPage.appendChild(refreshCart);
+  let checkoutBtn = document.createElement("button");
+  checkoutBtn.innerText = "Checkout";
+  checkoutBtn.classList.add("checkout");
+
+  checkoutBtn.setAttribute("type", "button");
+  checkoutBtn.addEventListener("click", function() {
+    cartPage.remove();
+    paymentPage.classList.remove("darken");
+    paymentPage.classList.add("open");
+  });
+  cartPage.appendChild(checkoutBtn);
+
+  ////Cash Payments
 
   cartPage.classList.add("open");
   document.querySelector(".products").classList.add("darken");
