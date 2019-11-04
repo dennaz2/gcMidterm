@@ -66,7 +66,7 @@ function openCart() {
   let cartPage = document.createElement("section");
   cartPage.classList.add("open");
   document.getElementById("cart").appendChild(cartPage);
-  document.querySelector(".products").classList.add("darken");
+  // document.querySelector(".products").classList.add("darken");
   let cartList = document.createElement("ul");
   cartPage.innerText = "Shopping Cart";
   cartPage.appendChild(cartList);
@@ -100,10 +100,11 @@ document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 //// toggleAttribute might also work.
 
 let paymentPage = document.querySelector(".payment");
-paymentPage.classList.add("darken");
+// paymentPage.classList.add("darken");
+let cartPage = document.querySelector("#cart");
+// cartPage.classList.add("darken");
 
 function openCart() {
-  let cartPage = document.querySelector("#cart");
   for (let cartItems of cart.cart) {
     let pEl = document.createElement("p");
     pEl.innerText = `${cartItems} $30`;
@@ -152,7 +153,7 @@ function openCart() {
   checkoutBtn.setAttribute("type", "button");
   checkoutBtn.addEventListener("click", function() {
     cartPage.remove();
-    paymentPage.classList.remove("darken");
+    // paymentPage.classList.remove("darken");
 
     paymentPage.classList.add("open");
     document.getElementById("totaldue").innerText = `Total: $${totalNum}`;
@@ -170,6 +171,14 @@ function openCart() {
       "changeowed"
     ).innerText = `Change Due: ${changeOwed}`;
   });
+
+  ////Receipt Page
+  // let receiptPage = document.getElementById("receipt");
+  // let payNow = document.querySelector("receipt-return");
+  // payNow.addEventListener("click", function(event) {
+  //   event.preventDefault();
+  //   console.log("paid");
+  // });
 
   cartPage.classList.add("open");
   document.querySelector(".products").classList.add("darken");

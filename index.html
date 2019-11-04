@@ -32,9 +32,7 @@
     </header>
     <div class="filler"></div>
     <section class="products"></section>
-    <section id="cart">
-      <h2>Cart</h2>
-    </section>
+    <section id="cart"><h2>cart</h2></section>
     <section class="payment">
       <h2>Payment</h2>
       <form id="cash">
@@ -46,45 +44,46 @@
         <p id="changeowed"></p>
       </form>
       <form class="credit-card">
-        <fieldset>
-          <h2>Credit</h2>
-          <label for="owner">Name on card</label>
-          <input type="text" id="owner" />
+        <!-- <fieldset> -->
+        <h2>Credit</h2>
+        <label for="owner">Name on card</label>
+        <input type="text" id="owner" />
 
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" />
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" />
 
-          <label for="cardNumber">Card Number</label>
-          <input type="text" id="cardNumber" />
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" />
 
-          <label>Expiration Date</label>
-          <select>
-            <option value="01">January</option>
-            <option value="02">February </option>
-            <option value="03">March</option>
-            <option value="04">April</option>
-            <option value="05">May</option>
-            <option value="06">June</option>
-            <option value="07">July</option>
-            <option value="08">August</option>
-            <option value="09">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          <select>
-            <option value="19"> 2019</option>
-            <option value="20"> 2020</option>
-            <option value="21"> 2021</option>
-            <option value="22"> 2022</option>
-            <option value="23"> 2023</option>
-            <option value="24"> 2024</option>
-            <option value="25"> 2025</option>
-          </select>
+        <label>Expiration Date</label>
+        <select>
+          <option value="01">January</option>
+          <option value="02">February </option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <select>
+          <option value="19"> 2019</option>
+          <option value="20"> 2020</option>
+          <option value="21"> 2021</option>
+          <option value="22"> 2022</option>
+          <option value="23"> 2023</option>
+          <option value="24"> 2024</option>
+          <option value="25"> 2025</option>
+        </select>
 
-          <button type="submit" id="confirm-purchase">Confirm</button>
-        </fieldset>
+        <button type="submit" id="confirm-purchase">Confirm</button>
+        <!-- </fieldset> -->
       </form>
+      <button type="submit" id="receipt-return">Receipt</button>
     </section>
     <section id="receipt">
       <h1>Thank you for shopping!</h1>

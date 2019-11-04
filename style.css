@@ -125,8 +125,25 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   padding-bottom: 20px;
   margin: 0 auto;
+}
+
+h2#cart {
+  background-color: grey;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgba(179, 178, 176, 0.4);
+  width: 70%;
 }
 
 input {
@@ -137,8 +154,10 @@ input {
 
 .credit-card {
   display: flex;
-
+  flex-direction: column;
+  padding: 30px;
   justify-content: center;
+  align-items: space-around;
   background-color: rgba(179, 178, 176, 0.4);
   margin: 0 auto;
 }
