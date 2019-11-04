@@ -13,6 +13,16 @@
   width: 50px;
   height: 30px;
 }
+.headline {
+  font-size: 27pt;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.title {
+  font-size: 14pt;
+  font-weight: 200;
+}
 
 button {
   cursor: pointer;
@@ -140,6 +150,10 @@ footer {
   justify-content: space-around;
   padding-bottom: 20px;
   margin: 0 auto;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 h2 {
