@@ -137,7 +137,7 @@ input {
 
 .credit-card {
   display: flex;
-  display: none;
+
   justify-content: center;
   background-color: rgba(179, 178, 176, 0.4);
   margin: 0 auto;

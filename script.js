@@ -153,11 +153,23 @@ function openCart() {
   checkoutBtn.addEventListener("click", function() {
     cartPage.remove();
     paymentPage.classList.remove("darken");
+
     paymentPage.classList.add("open");
+    document.getElementById("totaldue").innerText = `Total: $${totalNum}`;
   });
   cartPage.appendChild(checkoutBtn);
 
   ////Cash Payments
+
+  let payHere = document.querySelector("#cashtotal");
+  payHere.addEventListener("click", function(event) {
+    event.preventDefault();
+    let cashPaid = document.getElementById("amount").value;
+    let changeOwed = (cashPaid -= totalNum);
+    document.getElementById(
+      "changeowed"
+    ).innerText = `Change Due: ${changeOwed}`;
+  });
 
   cartPage.classList.add("open");
   document.querySelector(".products").classList.add("darken");
