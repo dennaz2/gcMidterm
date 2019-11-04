@@ -100,7 +100,7 @@ document.querySelector(".fa-shopping-cart").addEventListener("click", openCart);
 //// toggleAttribute might also work.
 
 function openCart() {
-  let cartPage = document.querySelector("#cart2");
+  let cartPage = document.querySelector("#cart");
   for (let cartItems of cart.cart) {
     let pEl = document.createElement("p");
     pEl.innerText = `${cartItems} $30`;
@@ -136,6 +136,8 @@ function openCart() {
     .querySelector(".fa-shopping-cart")
     .removeEventListener("click", openCart);
 }
+
+////????? To do - make total work, add creditcard form, add cash thing.
 
 // function openCart(cart) {
 //   let cartPage = document.createElement("section");
